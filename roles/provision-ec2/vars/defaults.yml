@@ -1,0 +1,10 @@
+ec2_keypair: "udemy"
+ec2_security_group: "sg-76676404"
+ec2_instance_type: "t2.micro"
+ec2_image: "ami-b66ed3de"
+ec2_subnet_ids: ['subnet-c50fd89c']
+ec2_region: "us-east-1"
+ec2_tag_Name: "Webserver"
+ec2_tag_Type: "webserver"
+ec2_tag_Environment: "production"
+ec2_volume_size: 10

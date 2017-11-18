@@ -1,0 +1,18 @@
+---
+#AWS Instance details
+- ec2_defaults:
+   image-id: ami-b66ed3de
+   key: udemy 
+   group: sg-76676404 
+   user-data-file: /home/ec2-user/copymedia.txt 
+   instance-type: t2.small 
+   block-device-mapping: "/dev/xvda=:10" 
+   block-device-mapping: "/dev/sdb=:10" 
+   subnet: subnet-c50fd89c 
+   private-ip-address: 172.16.1.183 
+   iam-profile: BPM85 
+   associate-public-ip-address: true
+   region: us-east-1
+   aws_access_key: AKIAJPLXHWXPGGBXWCUA
+   aws_secret key: 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
+...

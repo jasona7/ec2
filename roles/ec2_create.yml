@@ -1,0 +1,19 @@
+ - hosts: localhost
+   connection: local
+   tasks:
+     -name: Include vars
+       include_vars:aws-defaults.yml
+
+     -name: Launch Instance
+      ec2:
+          key_name: "{{ key }}"
+          group: "{{group}}"
+          instance_type: "{{instance-type}}"
+          image: "{{image-id}}"
+          wait: true
+          region: "{{us-east-1}}"
+          aws_access_key: "{{aws_access_key}}"
+          aws_secret_key: "{{aws_secret_key}}"
+      register: ec2
+     -name: Print all ec2 variables 
+      debug: var=ec2
