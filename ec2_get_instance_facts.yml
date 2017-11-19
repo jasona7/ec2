@@ -1,0 +1,9 @@
+--- # Create ec2 instance playbook
+
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: gather ec2 facts
+      ec2_remote_facts:
+        region: us-east-1
